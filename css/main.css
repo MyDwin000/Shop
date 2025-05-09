@@ -2,87 +2,76 @@
 body{
     padding: 0%;
     margin: 0%;
-
     background-color: rgb(245, 245, 245);
 }
 header {
-    padding: 0px 120px;
+    padding: 0 120px;
 }
-header nav {
+nav {
     display: flex;
     justify-content: space-between;
 }
-header nav a {
+nav a {
     text-decoration: none;
 }
-header nav .menu {
+.menu {
     width: 80%;
-
     list-style: none;
-
     display: flex;
     justify-content: space-between;
 } 
-header nav .menu .name {
+.menu .name {
     border-radius: 25px;
-    height:60px;
+    height:55px;
     width: 200px;
-
     font-family: "Inter", sans-serif;
-    font-size: 48px;
+    font-size: 44px;
     font-weight: bolder;
-
     background-color: black;
     box-shadow: 0 0 8px 8px black;
-    
 }
-header nav .menu .name > a {
+.menu .name > a {
     width: 100%;
     height: 100%;
-
     line-height: 60px;
     text-align: center;
-
     color: white;
-
     display: block;
 } 
-header nav .menu .button {
+.menu .button {
     border-radius: 15px;
     font-family: "Inter", sans-serif;
     font-size: 20px;
     font-weight: bolder;
-
     position: relative;
     display: inline-block;
-    transition: background-color 0.15s ease;}
-header nav .menu .button:hover {
-    background-color: rgba(245, 245, 245, 0.08);
-    box-shadow: 0 0 6px 4px rgba(245, 245, 245, 0.08);
+    transition: background-color 0.15s ease;
 }
-header nav .menu .button > a {
+.menu .button:hover {
+    background-color: rgba(245, 245, 245, 0.09);
+    box-shadow: 0 0 6px 4px rgba(245, 245, 245, 0.09);
+}
+.menu .button > a {
     display: block;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 15px;
     padding-right: 15px;
     color: white;
-    
 }
-header nav .menu .navbar {
+.menu .navbar {
     border-radius: 45px;
-    padding: 0 70px;
-    height: 60px;
-
+    padding: 0 60px;
+    margin-top: 12px;
+    height: 35px;
     background-color: black;
     box-shadow: 0 0 8px 8px black;
     list-style: none;
-
     display: flex;
     gap: 80px;
-
+    align-items: center;
 }
-header nav .submenu {
+.submenu {
     border-radius: 15px;
     min-width: 200px;
     top: 100%;
@@ -90,32 +79,30 @@ header nav .submenu {
     padding: 5px 0px;
     margin-right: 15px;
     margin-left: -44px;
-
-    background-color: rgba(255, 255, 0, 0.3);
-    box-shadow: 0 0 12px 10px black;
+    background-color: rgb(255, 255, 185);
+    box-shadow: 0 0 12px 10px #1E1E1E;
     list-style: none;
-
     opacity: 0;
     visibility: hidden;
     transform: translateY(4px);
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
     position: absolute;
+    z-index: 100;
 }
-header nav .menu .button:hover .submenu {
+.menu .button:hover .submenu {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
-header nav .submenu > li {
+.submenu > li {
     margin-top: 5px;
     padding: 0px 5px;
     height: 50px;
-
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: bolder;
 }
-header nav .submenu > li > a {
+.submenu > li > a {
     display: block;
     width: 100%;
     height: 100%;
@@ -124,23 +111,62 @@ header nav .submenu > li > a {
     text-decoration: none;
     color: black;
 }
-header nav .submenu > li:hover {
+.submenu > li:hover {
     border-radius: 10px;
     background-color: rgb(228, 228, 61);
     height: 50px;
 }
 header form {
     align-self: center;
-    
 }
 header form button {
     border: 2px solid black;
     border-radius: 15px;
     padding: 10px 20px;
-
     color: white;
     background-color: black;
     box-shadow: 0 0 8px 8px black;
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    transition: background-color 0.25s ease;
+}
+header form button:hover {
+    background-color: #1E1E1E;
+
+}
+main {
+    text-align: end;
+}
+main .quote {
+    margin-top: 200px;
+    display: block;
+    color: #1E1E1E;
+    font-family: "Inter", sans-serif;
+    font-size: 64px;
+    font-weight: bolder;
+    text-shadow: 0 0 3px #1E1E1E;
+}
+main .button {
+    border-radius: 25px;
+    margin-top: 20px;
+    width: 370px;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-self: end;
+    text-align: center;
+    transition: background-color 0.25s ease;
+}
+main .button:hover {
+    background-color: #1E1E1E;
+}
+main .button a {
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    text-decoration: none;
+    color: white;
     font-family: "Inter", sans-serif;
     font-size: 32px;
     font-weight: bolder;
