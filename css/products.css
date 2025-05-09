@@ -133,40 +133,5 @@ header form button {
 }
 header form button:hover {
     background-color: #1E1E1E;
-}
-main {
-    text-align: end;
-}
-main .quote {
-    margin-top: 200px;
-    display: block;
-    color: #1E1E1E;
-    font-family: "Inter", sans-serif;
-    font-size: 64px;
-    font-weight: bolder;
-    text-shadow: 0 0 3px #1E1E1E;
-}
-main .button {
-    border-radius: 25px;
-    margin-top: 20px;
-    width: 370px;
-    height: 50px;
-    background-color: #1E1E1E;
-    display: flex;
-    justify-self: end;
-    text-align: center;
-    transition: background-color 0.25s ease;
-}
-main .button:hover {
-    background-color: #1e1e1ea4;
-}
-main .button a {
-    width: 100%;
-    height: 100%;
-    line-height: 50px;
-    text-decoration: none;
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-size: 32px;
-    font-weight: bolder;
+
 }
